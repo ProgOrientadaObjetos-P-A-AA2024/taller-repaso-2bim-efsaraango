@@ -17,11 +17,11 @@ public abstract class Vehiculo {
     protected double precioBase;
     protected double precioFinal;
 
-    public Vehiculo(Comprador pro, String m, double pb, double pf) {
+    public Vehiculo(Comprador pro, String m, double pb) {
         propietario = pro;
         marca = m;
         precioBase = pb;
-        precioFinal = pf;
+      
     }
     
     public abstract void calcularPreciofinal();

@@ -33,5 +33,13 @@ public class Comprador {
     public String obtenerCedula() {
         return cedula;
     }
-
+    
+    @Override
+    public String toString() {
+         String cadena = String.format("Comprador: %s\n"
+                 + "Cédula: %s", 
+                 nombre, 
+                 cedula);
+         return cadena;
+    }
 }
