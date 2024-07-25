@@ -26,28 +26,32 @@ public abstract class Vehiculo {
     
     public abstract void calcularPreciofinal();
 
-    public void setPropietario(Comprador p) {
+    public void establecerPropietario(Comprador p) {
         propietario = p;
     }
 
-    public void setMarca(String m) {
+    public void establecerMarca(String m) {
         marca = m;
     }
 
-    public void setPrecioBase(double p) {
+    public void establecerPrecioBase(double p) {
         precioBase = p;
     }
 
-    public Comprador getPropietario() {
+    public Comprador obtenerPropietario() {
         return propietario;
     }
 
-    public String getMarca() {
+    public String obtenerMarca() {
         return marca;
     }
 
-    public double getPrecioBase() {
+    public double obtenerPrecioBase() {
         return precioBase;
+    }
+    
+    public double obtenerPrecioFinal() {
+        return precioFinal;
     }
 
     @Override

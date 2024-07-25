@@ -10,8 +10,9 @@ import paquete02.Comprador;
  *
  * @author Det-Pc
  */
-public class VehiculoTipoSedan extends Vehiculo{
-       private double porcentajeDescuento;
+public class VehiculoTipoSedan extends Vehiculo {
+
+    private double porcentajeDescuento;
 
     public VehiculoTipoSedan(Comprador propietario, String marca, double precioBase, double porcentajeDescuento) {
         super(propietario, marca, precioBase);
@@ -28,7 +29,13 @@ public class VehiculoTipoSedan extends Vehiculo{
 
     @Override
     public String toString() {
-        return String.format("%s, Tipo: Sedan, Descuento: %.2f%%, Seguro Mecánico: %.2f, Precio Final: %.2f", 
-                             super.toString(), porcentajeDescuento, precioBase * 0.01, precioFinal);
+        String cadena = String.format("%s\nTipo: Sedan\n"
+                + "Descuento: %.2f%%\nSeguro Mecánico: %.2f\n"
+                + "Precio Final: %.2f",
+                 super.toString(),
+                porcentajeDescuento,
+                precioBase * 0.01,
+                precioFinal);
+        return cadena;
     }
 }
